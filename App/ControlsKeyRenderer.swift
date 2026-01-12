@@ -2,7 +2,9 @@
 
 import Foundation
 import AppKit
+#if SWIFT_PACKAGE
 import LogoScreenSaverCore
+#endif
 
 /// Represents a keyboard binding for the controls legend
 public struct KeyBinding {

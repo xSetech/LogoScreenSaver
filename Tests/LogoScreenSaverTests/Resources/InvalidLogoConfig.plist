@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Logos</key>
+	<dict>
+		<key>missing-type</key>
+		<dict>
+			<key>Source</key>
+			<string>builtin</string>
+		</dict>
+		<key>missing-source</key>
+		<dict>
+			<key>Type</key>
+			<string>svg</string>
+		</dict>
+		<key>invalid-source</key>
+		<dict>
+			<key>Type</key>
+			<string>svg</string>
+			<key>Source</key>
+			<string>invalid</string>
+		</dict>
+		<key>valid-logo</key>
+		<dict>
+			<key>Type</key>
+			<string>svg</string>
+			<key>Source</key>
+			<string>builtin</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

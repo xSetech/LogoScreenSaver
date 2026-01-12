@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!--
+        Logo Entries
+
+        Each logo entry consists of:
+        - Key: The filename without extension (e.g., "diamond" for diamond.svg)
+        - Type: The file extension (e.g., "svg", "png", "jpg", "tiff")
+        - Source: Either "builtin" to the bundle or a "path"
+
+        Files must be placed in the Logos/ directory within the bundle.
+
+        Supported formats (via NSImage):
+        - SVG (macOS Sonoma 14+)
+        - PNG
+        - JPEG/JPG
+        - TIFF
+        - GIF
+        - BMP
+        - PDF
+
+        To add more logos:
+
+        1. Copy your image file to Resources/Logos/ directory
+        2. Add an entry here with the filename (without extension) as the key
+        3. Specify the file extension in the Type field
+
+        Example:
+        <key>bouncing_ball</key>
+        <dict>
+            <key>Type</key>
+            <string>png</string>
+        </dict>
+
+        You can also reference images from anywhere on your filesystem:
+
+        <key>/Users/username/Pictures/my-logo.png</key>
+        <dict>
+            <key>Type</key>
+            <string>png</string>
+            <key>Source</key>
+            <string>path</string>
+        </dict>
+    -->
+    <key>Logos</key>
+    <dict>
+        <key>sun</key>
+        <dict>
+            <key>Type</key>
+            <string>svg</string>
+            <key>Source</key>
+            <string>builtin</string>
+        </dict>
+        <key>apple</key>
+        <dict>
+            <key>Type</key>
+            <string>svg</string>
+            <key>Source</key>
+            <string>builtin</string>
+        </dict>
+        <key>disk</key>
+        <dict>
+            <key>Type</key>
+            <string>svg</string>
+            <key>Source</key>
+            <string>builtin</string>
+        </dict>
+    </dict>
+
+</dict>
+</plist>

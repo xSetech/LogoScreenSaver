@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-576,0)">
+        <g id="Disk" transform="matrix(1,0,0,1,576,0)">
+            <rect x="0" y="0" width="512" height="512" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="0" y="0" width="512" height="512"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1,0,0,1,-576,0)">
+                    <path d="M1022.51,0L601.6,0C587.471,0 576,11.471 576,25.6L576,486.4C576,500.529 587.471,512 601.6,512L1062.4,512C1076.53,512 1088,500.529 1088,486.4L1088,58.569L1022.51,0ZM1001.5,284L662.5,284L662.5,472L1001.5,472L1001.5,284ZM964,5L675,5L675,164L964,164L964,5Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(1.16949,0,0,1.56667,-665.225,-61.6333)">
+                    <rect x="817" y="47" width="59" height="90" style="fill:white;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

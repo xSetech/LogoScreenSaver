@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!--
+        Debug Mode
+
+        Enable or disable the debug overlay display.
+        When enabled, shows FPS, animation metrics, velocity, and log messages.
+
+        Default: false
+    -->
+    <key>Debug Mode</key>
+    <false/>
+
+    <!--
+        Log Level
+
+        Filtering level for log messages in the debug overlay.
+        Controls which log entries are displayed:
+        - "E" (Error): Only errors
+        - "W" (Warning): Warnings and errors
+        - "I" (Info): Info, warnings, and errors
+        - "D" (Debug): Everything
+
+        Default: "I" (Info)
+    -->
+    <key>Log Level</key>
+    <string>I</string>
+
+    <!--
+        Logo Frame Size Limit
+
+        Maximum size of logos as a fraction of the frame dimensions.
+        Logos are scaled to not exceed this percentage of the frame width or height,
+        while maintaining their aspect ratio.
+
+        Range: 0.0 to 1.0 (0% to 100%)
+        Default: 0.25 (25%)
+    -->
+    <key>Logo Frame Size Limit</key>
+    <real>0.25</real>
+
+</dict>
+</plist>

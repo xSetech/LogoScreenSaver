@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2C001032EE3000100000002 /* Logging/DebugOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001022EE3000000000002 /* Logging/DebugOverlay.swift */; };
+		F2C001052EE3000100000003 /* Animation/Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001042EE3000000000003 /* Animation/Logo.swift */; };
+		F2C001072EE3000100000004 /* Animation/Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001062EE3000000000004 /* Animation/Animator.swift */; };
+		F2C001092EE3000100000005 /* Logging/Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001082EE3000000000005 /* Logging/Logger.swift */; };
+		F2C0010A2EE3000100000009 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001092EE3000000000009 /* Errors.swift */; };
+		F2C0010C2EE3000100000012 /* BundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0010B2EE3000000000011 /* BundleHelper.swift */; };
+		F2C0010D2EE3000100000007 /* LogoScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0010C2EE3000000000007 /* LogoScreenSaverView.swift */; };
+		F2C0010G2EE3000100000013 /* Animation/Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0010F2EE3000000000013 /* Animation/Geometry.swift */; };
+		F2C0010L2EE3000100000094 /* Logging/LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001112EE3000000000097 /* Logging/LogLevel.swift */; };
+		F2C0010M2EE3000100000095 /* Configuration/PlistLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001122EE3000000000098 /* Configuration/PlistLoader.swift */; };
+		F2C0010N2EE3000100000092 /* Logging/LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001112EE3000000000097 /* Logging/LogLevel.swift */; };
+		F2C0010O2EE3000100000093 /* Configuration/PlistLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001122EE3000000000098 /* Configuration/PlistLoader.swift */; };
+		F2C0010P2EE3000100000096 /* Animation/ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001102EE3000000000099 /* Animation/ColorPalette.swift */; };
+		F2C0010Q2EE3000100000091 /* Animation/ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001102EE3000000000099 /* Animation/ColorPalette.swift */; };
+		F2C0010X2EE3000100000010 /* Animation/Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0010Y2EE3000000000010 /* Animation/Scene.swift */; };
+		F2C0010Z2EE3000100000041 /* Animation/Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0010Y2EE3000000000010 /* Animation/Scene.swift */; };
+		F2C001132EE3000100000011 /* Logging/DebugOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001022EE3000000000002 /* Logging/DebugOverlay.swift */; };
+		F2C001142EE3000100000043 /* Animation/Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0010F2EE3000000000013 /* Animation/Geometry.swift */; };
+		F2C001152EE3000100000012 /* Animation/Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001042EE3000000000003 /* Animation/Logo.swift */; };
+		F2C001172EE3000100000013 /* Animation/Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001062EE3000000000004 /* Animation/Animator.swift */; };
+		F2C001192EE3000100000014 /* Logging/Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001082EE3000000000005 /* Logging/Logger.swift */; };
+		F2C0011A2EE3000100000039 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001092EE3000000000009 /* Errors.swift */; };
+		F2C0011C2EE3000100000040 /* BundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0010B2EE3000000000011 /* BundleHelper.swift */; };
+		F2C0011D2EE3000100000016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0011C2EE3000000000016 /* AppDelegate.swift */; };
+		F2C0011F2EE3000100000017 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0011E2EE3000000000017 /* AppView.swift */; };
+		F2C001212EE3000100000018 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001202EE3000000000018 /* MainWindowController.swift */; };
+		F2C001242EE3000100000050 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001232EE3000000000050 /* main.swift */; };
+		F2C001372EE3000100000038 /* LogoScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0010C2EE3000000000007 /* LogoScreenSaverView.swift */; };
+		F2C00C242EE3000100000C24 /* ControlsKeyRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C00C222EE3000000000C22 /* ControlsKeyRenderer.swift */; };
+		F2CFG0152EE3000100000C15 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0062EE3000000000C06 /* Configuration.swift */; };
+		F2CFG0162EE3000100000C16 /* Core/Resources/Config/Logos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2CFG0072EE3000000000C07 /* Core/Resources/Config/Logos.plist */; };
+		F2CFG0172EE3000100000C17 /* Core/Resources/Config/Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2CFG0082EE3000000000C08 /* Core/Resources/Config/Colors.plist */; };
+		F2CFG0182EE3000100000C18 /* Core/Resources/Config/Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2CFG0092EE3000000000C09 /* Core/Resources/Config/Debug.plist */; };
+		F2CFG0192EE3000100000C19 /* Core/Resources/Logos in Resources */ = {isa = PBXBuildFile; fileRef = F2CFG00A2EE3000000000C0A /* Core/Resources/Logos */; };
+		F2CFG0252EE3000100000C25 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0062EE3000000000C06 /* Configuration.swift */; };
+		F2CFG0262EE3000100000C26 /* Core/Resources/Config/Logos.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2CFG0072EE3000000000C07 /* Core/Resources/Config/Logos.plist */; };
+		F2CFG0272EE3000100000C27 /* Core/Resources/Config/Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2CFG0082EE3000000000C08 /* Core/Resources/Config/Colors.plist */; };
+		F2CFG0282EE3000100000C28 /* Core/Resources/Config/Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2CFG0092EE3000000000C09 /* Core/Resources/Config/Debug.plist */; };
+		F2CFG0292EE3000100000C29 /* Core/Resources/Logos in Resources */ = {isa = PBXBuildFile; fileRef = F2CFG00A2EE3000000000C0A /* Core/Resources/Logos */; };
+		F2CFG0C12EE3000100000CC1 /* Loaders/ColorsPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CA2EE3000000000CCA /* Loaders/ColorsPlist.swift */; };
+		F2CFG0C22EE3000100000CC2 /* Loaders/DebugPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CB2EE3000000000CCB /* Loaders/DebugPlist.swift */; };
+		F2CFG0C32EE3000100000CC3 /* Loaders/LogosPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CC2EE3000000000CCC /* Loaders/LogosPlist.swift */; };
+		F2CFG0C72EE3000100000CC7 /* Loaders/ColorsPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CA2EE3000000000CCA /* Loaders/ColorsPlist.swift */; };
+		F2CFG0C82EE3000100000CC8 /* Loaders/DebugPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CB2EE3000000000CCB /* Loaders/DebugPlist.swift */; };
+		F2CFG0C92EE3000100000CC9 /* Loaders/LogosPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CC2EE3000000000CCC /* Loaders/LogosPlist.swift */; };
+		F2CFG0D12EE3000100000CD1 /* Models/ColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CD2EE3000000000CCD /* Models/ColorConfig.swift */; };
+		F2CFG0D22EE3000100000CD2 /* Models/DebugConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CE2EE3000000000CCE /* Models/DebugConfig.swift */; };
+		F2CFG0D32EE3000100000CD3 /* Models/LogoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CF2EE3000000000CCF /* Models/LogoConfig.swift */; };
+		F2CFG0D42EE3000100000CD4 /* Models/ColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CD2EE3000000000CCD /* Models/ColorConfig.swift */; };
+		F2CFG0D52EE3000100000CD5 /* Models/DebugConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CE2EE3000000000CCE /* Models/DebugConfig.swift */; };
+		F2CFG0D62EE3000100000CD6 /* Models/LogoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFG0CF2EE3000000000CCF /* Models/LogoConfig.swift */; };
+		F2DF8A592B268E7300F13A5B /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = F2DF8A572B268E7300F13A5B /* LICENSE.md */; };
+		F2DF8A5A2B268E7300F13A5B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F2DF8A582B268E7300F13A5B /* README.md */; };
+		F2ICN0032EE3000100000003 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F2ICN0022EE3000000000002 /* AppIcon.icns */; };
+		F2ICN0042EE3000100000004 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F2ICN0012EE3000000000001 /* AppIcon.icns */; };
+		F2THM0032EE3000100000003 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F2THM0012EE3000000000001 /* thumbnail.png */; };
+		F2THM0042EE3000100000004 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2THM0022EE3000000000002 /* thumbnail@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F22C56F02B258E2F00B5A43A /* LogoScreenSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogoScreenSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C001022EE3000000000002 /* Logging/DebugOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging/DebugOverlay.swift; sourceTree = "<group>"; };
+		F2C001042EE3000000000003 /* Animation/Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation/Logo.swift; sourceTree = "<group>"; };
+		F2C001062EE3000000000004 /* Animation/Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation/Animator.swift; sourceTree = "<group>"; };
+		F2C001082EE3000000000005 /* Logging/Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging/Logger.swift; sourceTree = "<group>"; };
+		F2C001092EE3000000000009 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		F2C0010B2EE3000000000011 /* BundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleHelper.swift; sourceTree = "<group>"; };
+		F2C0010C2EE3000000000007 /* LogoScreenSaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoScreenSaverView.swift; sourceTree = "<group>"; };
+		F2C0010F2EE3000000000013 /* Animation/Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation/Geometry.swift; sourceTree = "<group>"; };
+		F2C0010Y2EE3000000000010 /* Animation/Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation/Scene.swift; sourceTree = "<group>"; };
+		F2C001102EE3000000000099 /* Animation/ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation/ColorPalette.swift; sourceTree = "<group>"; };
+		F2C001112EE3000000000097 /* Logging/LogLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging/LogLevel.swift; sourceTree = "<group>"; };
+		F2C001122EE3000000000098 /* Configuration/PlistLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration/PlistLoader.swift; sourceTree = "<group>"; };
+		F2C0011C2EE3000000000016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2C0011E2EE3000000000017 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		F2C001202EE3000000000018 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		F2C001232EE3000000000050 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F2C001272EE3000000000022 /* LogoScreenSaverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogoScreenSaverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C001282EE3000000000023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C001292EE3000000000024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C0012A2EE3000000000025 /* LogoScreenSaverApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogoScreenSaverApp.entitlements; sourceTree = "<group>"; };
+		F2C00C222EE3000000000C22 /* ControlsKeyRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsKeyRenderer.swift; sourceTree = "<group>"; };
+		F2CFG0062EE3000000000C06 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		F2CFG0072EE3000000000C07 /* Core/Resources/Config/Logos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Core/Resources/Config/Logos.plist; sourceTree = "<group>"; };
+		F2CFG0082EE3000000000C08 /* Core/Resources/Config/Colors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Core/Resources/Config/Colors.plist; sourceTree = "<group>"; };
+		F2CFG0092EE3000000000C09 /* Core/Resources/Config/Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Core/Resources/Config/Debug.plist; sourceTree = "<group>"; };
+		F2CFG00A2EE3000000000C0A /* Core/Resources/Logos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Core/Resources/Logos; sourceTree = "<group>"; };
+		F2CFG0CA2EE3000000000CCA /* Loaders/ColorsPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loaders/ColorsPlist.swift; sourceTree = "<group>"; };
+		F2CFG0CB2EE3000000000CCB /* Loaders/DebugPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loaders/DebugPlist.swift; sourceTree = "<group>"; };
+		F2CFG0CC2EE3000000000CCC /* Loaders/LogosPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loaders/LogosPlist.swift; sourceTree = "<group>"; };
+		F2CFG0CD2EE3000000000CCD /* Models/ColorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/ColorConfig.swift; sourceTree = "<group>"; };
+		F2CFG0CE2EE3000000000CCE /* Models/DebugConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/DebugConfig.swift; sourceTree = "<group>"; };
+		F2CFG0CF2EE3000000000CCF /* Models/LogoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/LogoConfig.swift; sourceTree = "<group>"; };
+		F2DF8A572B268E7300F13A5B /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		F2DF8A582B268E7300F13A5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F2ICN0012EE3000000000001 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		F2ICN0022EE3000000000002 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		F2THM0012EE3000000000001 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		F2THM0022EE3000000000002 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F22C56ED2B258E2F00B5A43A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C0012B2EE3000000000026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F22C56E62B258E2F00B5A43A = {
+			isa = PBXGroup;
+			children = (
+				F2C0012C2EE3000000000027 /* Core */,
+				F2C0012D2EE3000000000028 /* ScreenSaver */,
+				F2C0012E2EE3000000000029 /* App */,
+				F2DF8A572B268E7300F13A5B /* LICENSE.md */,
+				F2CFG0072EE3000000000C07 /* Core/Resources/Config/Logos.plist */,
+				F2CFG0082EE3000000000C08 /* Core/Resources/Config/Colors.plist */,
+				F2CFG0092EE3000000000C09 /* Core/Resources/Config/Debug.plist */,
+				F2CFG00A2EE3000000000C0A /* Core/Resources/Logos */,
+				F2DF8A582B268E7300F13A5B /* README.md */,
+				F22C56F12B258E2F00B5A43A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F22C56F12B258E2F00B5A43A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F22C56F02B258E2F00B5A43A /* LogoScreenSaver.saver */,
+				F2C001272EE3000000000022 /* LogoScreenSaverApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2C0012C2EE3000000000027 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F2C001022EE3000000000002 /* Logging/DebugOverlay.swift */,
+				F2C001042EE3000000000003 /* Animation/Logo.swift */,
+				F2C001062EE3000000000004 /* Animation/Animator.swift */,
+				F2C001092EE3000000000009 /* Errors.swift */,
+				F2C0010F2EE3000000000013 /* Animation/Geometry.swift */,
+				F2C001082EE3000000000005 /* Logging/Logger.swift */,
+				F2CFG0C02EE3000000000CC0 /* Configuration */,
+				F2C0010Y2EE3000000000010 /* Animation/Scene.swift */,
+				F2C0010B2EE3000000000011 /* BundleHelper.swift */,
+				F2C001102EE3000000000099 /* Animation/ColorPalette.swift */,
+				F2C001112EE3000000000097 /* Logging/LogLevel.swift */,
+				F2C001122EE3000000000098 /* Configuration/PlistLoader.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F2C0012D2EE3000000000028 /* ScreenSaver */ = {
+			isa = PBXGroup;
+			children = (
+				F2ICN0022EE3000000000002 /* AppIcon.icns */,
+				F2C001282EE3000000000023 /* Info.plist */,
+				F2C0010C2EE3000000000007 /* LogoScreenSaverView.swift */,
+				F2THM0012EE3000000000001 /* thumbnail.png */,
+				F2THM0022EE3000000000002 /* thumbnail@2x.png */,
+			);
+			path = ScreenSaver;
+			sourceTree = "<group>";
+		};
+		F2C0012E2EE3000000000029 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F2C0011C2EE3000000000016 /* AppDelegate.swift */,
+				F2ICN0012EE3000000000001 /* AppIcon.icns */,
+				F2C00C222EE3000000000C22 /* ControlsKeyRenderer.swift */,
+				F2C001292EE3000000000024 /* Info.plist */,
+				F2C0011E2EE3000000000017 /* AppView.swift */,
+				F2C0012A2EE3000000000025 /* LogoScreenSaverApp.entitlements */,
+				F2C001202EE3000000000018 /* MainWindowController.swift */,
+				F2C001232EE3000000000050 /* main.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F2CFG0C02EE3000000000CC0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F2CFG0062EE3000000000C06 /* Configuration.swift */,
+				F2CFG0CA2EE3000000000CCA /* Loaders/ColorsPlist.swift */,
+				F2CFG0CB2EE3000000000CCB /* Loaders/DebugPlist.swift */,
+				F2CFG0CC2EE3000000000CCC /* Loaders/LogosPlist.swift */,
+				F2CFG0CD2EE3000000000CCD /* Models/ColorConfig.swift */,
+				F2CFG0CE2EE3000000000CCE /* Models/DebugConfig.swift */,
+				F2CFG0CF2EE3000000000CCF /* Models/LogoConfig.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F22C56EB2B258E2F00B5A43A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F22C56EF2B258E2F00B5A43A /* LogoScreenSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22C56F92B258E2F00B5A43A /* Build configuration list for PBXNativeTarget "LogoScreenSaver" */;
+			buildPhases = (
+				F22C56EB2B258E2F00B5A43A /* Headers */,
+				F22C56EC2B258E2F00B5A43A /* Sources */,
+				F22C56ED2B258E2F00B5A43A /* Frameworks */,
+				F22C56EE2B258E2F00B5A43A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogoScreenSaver;
+			productName = LogoScreenSaver;
+			productReference = F22C56F02B258E2F00B5A43A /* LogoScreenSaver.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F2C0012F2EE3000000000030 /* LogoScreenSaverApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C001302EE3000000000031 /* Build configuration list for PBXNativeTarget "LogoScreenSaverApp" */;
+			buildPhases = (
+				F2C001312EE3000000000032 /* Sources */,
+				F2C0012B2EE3000000000026 /* Frameworks */,
+				F2C001332EE3000000000034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogoScreenSaverApp;
+			productName = LogoScreenSaverApp;
+			productReference = F2C001272EE3000000000022 /* LogoScreenSaverApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F22C56E72B258E2F00B5A43A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					F22C56EF2B258E2F00B5A43A = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
+					F2C0012F2EE3000000000030 = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
+				};
+			};
+			buildConfigurationList = F22C56EA2B258E2F00B5A43A /* Build configuration list for PBXProject "LogoScreenSaver" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F22C56E62B258E2F00B5A43A;
+			productRefGroup = F22C56F12B258E2F00B5A43A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F22C56EF2B258E2F00B5A43A /* LogoScreenSaver */,
+				F2C0012F2EE3000000000030 /* LogoScreenSaverApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F22C56EE2B258E2F00B5A43A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2ICN0032EE3000100000003 /* AppIcon.icns in Resources */,
+				F2THM0032EE3000100000003 /* thumbnail.png in Resources */,
+				F2THM0042EE3000100000004 /* thumbnail@2x.png in Resources */,
+				F2CFG0162EE3000100000C16 /* Core/Resources/Config/Logos.plist in Resources */,
+				F2CFG0172EE3000100000C17 /* Core/Resources/Config/Colors.plist in Resources */,
+				F2CFG0182EE3000100000C18 /* Core/Resources/Config/Debug.plist in Resources */,
+				F2CFG0192EE3000100000C19 /* Core/Resources/Logos in Resources */,
+				F2DF8A592B268E7300F13A5B /* LICENSE.md in Resources */,
+				F2DF8A5A2B268E7300F13A5B /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C001332EE3000000000034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2ICN0042EE3000100000004 /* AppIcon.icns in Resources */,
+				F2CFG0262EE3000100000C26 /* Core/Resources/Config/Logos.plist in Resources */,
+				F2CFG0272EE3000100000C27 /* Core/Resources/Config/Colors.plist in Resources */,
+				F2CFG0282EE3000100000C28 /* Core/Resources/Config/Debug.plist in Resources */,
+				F2CFG0292EE3000100000C29 /* Core/Resources/Logos in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F22C56EC2B258E2F00B5A43A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C001032EE3000100000002 /* Logging/DebugOverlay.swift in Sources */,
+				F2CFG0152EE3000100000C15 /* Configuration.swift in Sources */,
+				F2CFG0C12EE3000100000CC1 /* Loaders/ColorsPlist.swift in Sources */,
+				F2CFG0C22EE3000100000CC2 /* Loaders/DebugPlist.swift in Sources */,
+				F2CFG0C32EE3000100000CC3 /* Loaders/LogosPlist.swift in Sources */,
+				F2C001052EE3000100000003 /* Animation/Logo.swift in Sources */,
+				F2C0010X2EE3000100000010 /* Animation/Scene.swift in Sources */,
+				F2C001072EE3000100000004 /* Animation/Animator.swift in Sources */,
+				F2C0010A2EE3000100000009 /* Errors.swift in Sources */,
+				F2C0010G2EE3000100000013 /* Animation/Geometry.swift in Sources */,
+				F2C001092EE3000100000005 /* Logging/Logger.swift in Sources */,
+				F2C0010C2EE3000100000012 /* BundleHelper.swift in Sources */,
+				F2C0010P2EE3000100000096 /* Animation/ColorPalette.swift in Sources */,
+				F2C0010L2EE3000100000094 /* Logging/LogLevel.swift in Sources */,
+				F2C0010M2EE3000100000095 /* Configuration/PlistLoader.swift in Sources */,
+				F2CFG0D12EE3000100000CD1 /* Models/ColorConfig.swift in Sources */,
+				F2CFG0D22EE3000100000CD2 /* Models/DebugConfig.swift in Sources */,
+				F2CFG0D32EE3000100000CD3 /* Models/LogoConfig.swift in Sources */,
+				F2C0010D2EE3000100000007 /* LogoScreenSaverView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C001312EE3000000000032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C00C242EE3000100000C24 /* ControlsKeyRenderer.swift in Sources */,
+				F2C001132EE3000100000011 /* Logging/DebugOverlay.swift in Sources */,
+				F2CFG0252EE3000100000C25 /* Configuration.swift in Sources */,
+				F2CFG0C72EE3000100000CC7 /* Loaders/ColorsPlist.swift in Sources */,
+				F2CFG0C82EE3000100000CC8 /* Loaders/DebugPlist.swift in Sources */,
+				F2CFG0C92EE3000100000CC9 /* Loaders/LogosPlist.swift in Sources */,
+				F2C001152EE3000100000012 /* Animation/Logo.swift in Sources */,
+				F2C0010Z2EE3000100000041 /* Animation/Scene.swift in Sources */,
+				F2C001172EE3000100000013 /* Animation/Animator.swift in Sources */,
+				F2C0011A2EE3000100000039 /* Errors.swift in Sources */,
+				F2C001142EE3000100000043 /* Animation/Geometry.swift in Sources */,
+				F2C001192EE3000100000014 /* Logging/Logger.swift in Sources */,
+				F2C0011C2EE3000100000040 /* BundleHelper.swift in Sources */,
+				F2C0010Q2EE3000100000091 /* Animation/ColorPalette.swift in Sources */,
+				F2C0010N2EE3000100000092 /* Logging/LogLevel.swift in Sources */,
+				F2C0010O2EE3000100000093 /* Configuration/PlistLoader.swift in Sources */,
+				F2CFG0D42EE3000100000CD4 /* Models/ColorConfig.swift in Sources */,
+				F2CFG0D52EE3000100000CD5 /* Models/DebugConfig.swift in Sources */,
+				F2CFG0D62EE3000100000CD6 /* Models/LogoConfig.swift in Sources */,
+				F2C001372EE3000100000038 /* LogoScreenSaverView.swift in Sources */,
+				F2C0011D2EE3000100000016 /* AppDelegate.swift in Sources */,
+				F2C001242EE3000100000050 /* main.swift in Sources */,
+				F2C0011F2EE3000100000017 /* AppView.swift in Sources */,
+				F2C001212EE3000100000018 /* MainWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F22C56F72B258E2F00B5A43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MVU3C62GP8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+			};
+			name = Debug;
+		};
+		F22C56F82B258E2F00B5A43A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MVU3C62GP8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F22C56FA2B258E2F00B5A43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ScreenSaver/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LogoScreenSaver;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xsetech.logoscreensaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		F22C56FB2B258E2F00B5A43A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ScreenSaver/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LogoScreenSaver;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xsetech.logoscreensaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		F2C001342EE3000000000035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = App/LogoScreenSaverApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xsetech.logoscreensaver.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F2C001352EE3000000000036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = App/LogoScreenSaverApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xsetech.logoscreensaver.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F22C56EA2B258E2F00B5A43A /* Build configuration list for PBXProject "LogoScreenSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22C56F72B258E2F00B5A43A /* Debug */,
+				F22C56F82B258E2F00B5A43A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22C56F92B258E2F00B5A43A /* Build configuration list for PBXNativeTarget "LogoScreenSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22C56FA2B258E2F00B5A43A /* Debug */,
+				F22C56FB2B258E2F00B5A43A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2C001302EE3000000000031 /* Build configuration list for PBXNativeTarget "LogoScreenSaverApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C001342EE3000000000035 /* Debug */,
+				F2C001352EE3000000000036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F22C56E72B258E2F00B5A43A /* Project object */;
+}

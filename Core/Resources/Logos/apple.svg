@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1149.5,0)">
+        <g id="Apple" transform="matrix(1,0,0,1,1149.5,0)">
+            <rect x="0" y="0" width="512" height="512" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="0" y="0" width="512" height="512"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1,0,0,0.951286,-1149.5,24.9462)">
+                    <path d="M1237,64.488C1174.15,76.782 1149.5,170.846 1149.5,232C1149.5,293.154 1192.17,516.108 1316,512C1363.82,510.414 1398.34,496.638 1405.67,496.638C1414.5,496.638 1472.71,513.52 1519,512C1590.99,509.635 1663.52,415.123 1661.5,229C1660.64,150.972 1633.09,82.719 1545,73.59C1473.18,66.148 1439.43,91.724 1405.47,93C1356.51,94.841 1295.17,53.109 1237,64.488Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(0.560089,-1.26046,1.46976,0.653095,-661.246,1800.61)">
+                    <path d="M1435,13C1435,13 1366.75,37.089 1405.5,93C1446.86,73.002 1450.09,39.186 1435,13Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(1.13327,0,0,1.12896,-1336.8,-2.32136)">
+                    <path d="M1405.47,103C1405.47,103 1409.52,42.735 1446,18C1452.74,19.166 1461.53,22.772 1461.53,22.772C1450.69,37.988 1420.03,69.649 1414.41,105.657C1411.88,106.321 1405.47,103 1405.47,103Z" style="fill:white;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

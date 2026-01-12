@@ -1,0 +1,25 @@
+# SwiftLint Configuration for LogoScreenSaver
+
+# Disabled rules (we're not enforcing these)
+disabled_rules:
+  - line_length
+  - identifier_name
+  - file_length
+
+# Paths to include in linting
+included:
+  - Core
+  - App
+  - ScreenSaver
+  - Tests
+
+# Paths to exclude from linting
+excluded:
+  - .build
+  - .swiftpm
+  - Packages
+
+# Rule configurations
+cyclomatic_complexity:
+  warning: 12
+  error: 20

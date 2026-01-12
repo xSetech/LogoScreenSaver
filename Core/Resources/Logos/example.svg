@@ -1,0 +1,54 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" baseProfile="full" style="zoom: 1;">
+<!--Created with macSVG - https://macsvg.org/ - https://github.com/dsward2/macsvg/-->
+  <defs>
+    <linearGradient id="a" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#e9967a"/>
+      <stop offset="100%" stop-color="#2f4f4f"/>
+    </linearGradient>
+    <linearGradient id="c" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#dc143c"/>
+      <stop offset="100%" stop-color="#8b008b"/>
+    </linearGradient>
+    <linearGradient id="e" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#4169e1"/>
+      <stop offset="100%" stop-color="wheat"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0ff"/>
+      <stop offset="100%" stop-color="green"/>
+    </linearGradient>
+    <linearGradient id="b" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#bc8f8f"/>
+    </linearGradient>
+    <linearGradient id="d" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#c0fbff"/>
+    </linearGradient>
+    <linearGradient id="f" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%"/>
+    </linearGradient>
+    <linearGradient id="h" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%"/>
+      <stop offset="100%" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="i" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#d8bfd8"/>
+      <stop offset="100%" stop-color="violet"/>
+    </linearGradient>
+  </defs>
+  <path fill="none" stroke="url(#a)" stroke-width="3" d="M50 15s239-1 239-2-124 112-124 112L92 54 64 179l191 38 16-107L50 15"/>
+  <circle cx="72" cy="42" r="41" fill="url(#b)" stroke="url(#c)" stroke-width="3"/>
+  <path fill="url(#d)" stroke="url(#e)" stroke-width="3" d="m276 47 32 34-53 12z"/>
+  <path fill="url(#f)" stroke="url(#g)" stroke-width="3" d="M139 93h60v56h-60z" transform="rotate(18.435 169 121)"/>
+  <text x="168" y="134" fill="url(#h)" font-family="Webdings" font-size="48" style="outline-style: none;" text-anchor="middle" text-rendering="geometricPrecision">7</text>
+  <text x="72" y="62" fill="#fff" font-family="Webdings" font-size="64" style="outline-style: none;" text-anchor="middle" text-rendering="geometricPrecision">j</text>
+  <text x="279" y="78" fill="url(#i)" font-family="Webdings" font-size="16" style="outline-style:none;" text-anchor="middle" text-rendering="geometricPrecision">/</text>
+  <text x="25.083" y="223" fill="#fff" font-family="Comic Sans MS" font-size="38" font-variant="small-caps" font-weight="bolder" style="outline-style: none; text-shadow: 2px 2px 4px #000000;" text-anchor="middle" text-rendering="geometricPrecision" transform="rotate(-16 25.078 207.594) skewX(17)">Example !</text>
+  <text x="200.408" y="132.323" fill="#fff" font-family="Charcoal" font-size="38" font-variant="small-caps" font-weight="bolder" style="outline-style: none; text-shadow: 2px 2px 4px #000000;" text-anchor="middle" text-rendering="geometricPrecision" transform="rotate(38 194 176) skewX(17)">?????</text>
+  <text x="193.692" y="53.575" fill="#fff" font-family="Comic Sans MS" font-size="38" font-variant="small-caps" font-weight="bolder" style="outline-style: none; text-shadow: 2px 2px 4px #000000;" text-anchor="middle" text-rendering="geometricPrecision">😎</text>
+  <text x="68.692" y="142.575" fill="#fff" font-family="Comic Sans MS" font-size="38" font-variant="small-caps" font-weight="bolder" style="outline-style: none; text-shadow: 2px 2px 4px #000000;" text-anchor="middle" text-rendering="geometricPrecision">🎳</text>
+  <text x="252.692" y="228.575" fill="#fff" font-family="Comic Sans MS" font-size="38" font-variant="small-caps" font-weight="bolder" style="outline-style: none; text-shadow: 2px 2px 4px #000000;" text-anchor="middle" text-rendering="geometricPrecision">📀</text>
+</svg>

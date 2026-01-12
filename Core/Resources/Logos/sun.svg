@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(2.55128,0,0,2.55128,-547.084,-528.834)">
+        <circle cx="314.777" cy="307.624" r="67.042" style="fill:white;"/>
+    </g>
+    <g transform="matrix(1.0275,0,0,0.985636,-22.0397,-15.7702)">
+        <path d="M270.599,16L307.199,89.199L234,89.199L270.599,16Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(0.726549,-0.726549,0.69695,0.69695,-132.774,260.433)">
+        <path d="M270.599,16L307.199,89.199L234,89.199L270.599,16Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(2.22045e-16,-1.0275,0.985636,1.66533e-16,-15.7702,534.04)">
+        <path d="M270.599,16L307.199,89.199L234,89.199L270.599,16Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(-0.726549,-0.726549,0.69695,-0.69695,260.433,644.774)">
+        <path d="M270.599,16L307.199,89.199L234,89.199L270.599,16Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(-1.0275,-2.22045e-16,3.33067e-16,-0.985636,534.04,527.77)">
+        <path d="M270.599,16L307.199,89.199L234,89.199L270.599,16Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(-0.726549,0.726549,-0.69695,-0.69695,644.774,251.567)">
+        <path d="M270.599,16L307.199,89.199L234,89.199L270.599,16Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(-2.22045e-16,1.0275,-0.985636,-4.44089e-16,527.77,-22.0397)">
+        <path d="M270.599,16L307.199,89.199L234,89.199L270.599,16Z" style="fill:white;"/>
+    </g>
+    <g transform="matrix(0.726549,0.726549,-0.69695,0.69695,251.567,-132.774)">
+        <path d="M270.599,16L307.199,89.199L234,89.199L270.599,16Z" style="fill:white;"/>
+    </g>
+</svg>

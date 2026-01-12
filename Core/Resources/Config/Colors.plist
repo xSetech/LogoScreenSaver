@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!--
+        Default Color Palette
+
+        Specifies which color palette to use by default.
+        Must match one of the palette names defined in "Color Palettes" below,
+        or use "None" for no colorization.
+
+        Available palettes: Spectrum, Christmas, Halloween, Pride, Valentine, Easter,
+        USA, Ocean, Sunset, Forest, Monochrome, Neon
+
+        Default: "Spectrum"
+    -->
+    <key>Color Palette</key>
+    <string>Spectrum</string>
+
+    <!--
+        Color Palettes
+
+        Defines the available color palettes for logo coloring.
+
+        Format:
+        - Each palette is an array of color definitions
+        - Each color definition must have a "Color Space" key ("RGB" or "HSV")
+        - For RGB: Red, Green, Blue, Alpha (0.0-1.0)
+        - For HSV: Hue (0-360 degrees), Saturation, Value, Alpha (0.0-1.0)
+        - Values can be discrete (e.g., <real>0.5</real>) or ranges (e.g., <string>0.13...0.87</string>)
+
+        Special palette:
+        - "None": No colorization (do not define in this file)
+
+        To add a new palette:
+        1. Choose a descriptive name
+        2. Define an array of color dictionaries
+        3. Each color must have "Color Space" and component keys
+        4. Update the "Color Palette" key above if you want it as the default
+    -->
+    <key>Color Palettes</key>
+    <dict>
+        <key>Spectrum</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>HSV</string>
+                <key>Hue</key>
+                <string>0...360</string>
+                <key>Saturation</key>
+                <string>0.5...1.0</string>
+                <key>Value</key>
+                <string>0.5...1.0</string>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>Christmas</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.80</real>
+                <key>Green</key>
+                <real>0.15</real>
+                <key>Blue</key>
+                <real>0.15</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.13</real>
+                <key>Green</key>
+                <real>0.55</real>
+                <key>Blue</key>
+                <real>0.13</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.95</real>
+                <key>Green</key>
+                <real>0.95</real>
+                <key>Blue</key>
+                <real>0.95</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.85</real>
+                <key>Green</key>
+                <real>0.65</real>
+                <key>Blue</key>
+                <real>0.13</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>Halloween</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.90</real>
+                <key>Green</key>
+                <real>0.45</real>
+                <key>Blue</key>
+                <real>0.10</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.10</real>
+                <key>Green</key>
+                <real>0.10</real>
+                <key>Blue</key>
+                <real>0.10</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.50</real>
+                <key>Green</key>
+                <real>0.15</real>
+                <key>Blue</key>
+                <real>0.50</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.20</real>
+                <key>Green</key>
+                <real>0.40</real>
+                <key>Blue</key>
+                <real>0.20</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>Pride</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.90</real>
+                <key>Green</key>
+                <real>0.15</real>
+                <key>Blue</key>
+                <real>0.15</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.90</real>
+                <key>Green</key>
+                <real>0.50</real>
+                <key>Blue</key>
+                <real>0.15</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.90</real>
+                <key>Green</key>
+                <real>0.85</real>
+                <key>Blue</key>
+                <real>0.20</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.20</real>
+                <key>Green</key>
+                <real>0.70</real>
+                <key>Blue</key>
+                <real>0.20</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.20</real>
+                <key>Green</key>
+                <real>0.40</real>
+                <key>Blue</key>
+                <real>0.80</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.55</real>
+                <key>Green</key>
+                <real>0.20</real>
+                <key>Blue</key>
+                <real>0.70</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>Valentine</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.85</real>
+                <key>Green</key>
+                <real>0.15</real>
+                <key>Blue</key>
+                <real>0.25</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.95</real>
+                <key>Green</key>
+                <real>0.60</real>
+                <key>Blue</key>
+                <real>0.75</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.95</real>
+                <key>Green</key>
+                <real>0.90</real>
+                <key>Blue</key>
+                <real>0.90</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.85</real>
+                <key>Green</key>
+                <real>0.25</real>
+                <key>Blue</key>
+                <real>0.55</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>Easter</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.85</real>
+                <key>Green</key>
+                <real>0.75</real>
+                <key>Blue</key>
+                <real>0.90</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.90</real>
+                <key>Green</key>
+                <real>0.85</real>
+                <key>Blue</key>
+                <real>0.60</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.75</real>
+                <key>Green</key>
+                <real>0.90</real>
+                <key>Blue</key>
+                <real>0.80</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.90</real>
+                <key>Green</key>
+                <real>0.75</real>
+                <key>Blue</key>
+                <real>0.80</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.75</real>
+                <key>Green</key>
+                <real>0.85</real>
+                <key>Blue</key>
+                <real>0.95</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>USA</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.85</real>
+                <key>Green</key>
+                <real>0.15</real>
+                <key>Blue</key>
+                <real>0.20</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.95</real>
+                <key>Green</key>
+                <real>0.95</real>
+                <key>Blue</key>
+                <real>0.95</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.15</real>
+                <key>Green</key>
+                <real>0.25</real>
+                <key>Blue</key>
+                <real>0.55</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>Ocean</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.15</real>
+                <key>Green</key>
+                <real>0.35</real>
+                <key>Blue</key>
+                <real>0.65</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.20</real>
+                <key>Green</key>
+                <real>0.55</real>
+                <key>Blue</key>
+                <real>0.75</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.30</real>
+                <key>Green</key>
+                <real>0.70</real>
+                <key>Blue</key>
+                <real>0.70</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.50</real>
+                <key>Green</key>
+                <real>0.80</real>
+                <key>Blue</key>
+                <real>0.80</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>Sunset</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.90</real>
+                <key>Green</key>
+                <real>0.50</real>
+                <key>Blue</key>
+                <real>0.20</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.95</real>
+                <key>Green</key>
+                <real>0.65</real>
+                <key>Blue</key>
+                <real>0.75</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.60</real>
+                <key>Green</key>
+                <real>0.30</real>
+                <key>Blue</key>
+                <real>0.70</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.95</real>
+                <key>Green</key>
+                <real>0.85</real>
+                <key>Blue</key>
+                <real>0.30</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>Forest</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.20</real>
+                <key>Green</key>
+                <real>0.45</real>
+                <key>Blue</key>
+                <real>0.25</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.30</real>
+                <key>Green</key>
+                <real>0.60</real>
+                <key>Blue</key>
+                <real>0.35</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.45</real>
+                <key>Green</key>
+                <real>0.35</real>
+                <key>Blue</key>
+                <real>0.25</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.35</real>
+                <key>Green</key>
+                <real>0.50</real>
+                <key>Blue</key>
+                <real>0.30</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>Monochrome</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.20</real>
+                <key>Green</key>
+                <real>0.20</real>
+                <key>Blue</key>
+                <real>0.20</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.40</real>
+                <key>Green</key>
+                <real>0.40</real>
+                <key>Blue</key>
+                <real>0.40</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.60</real>
+                <key>Green</key>
+                <real>0.60</real>
+                <key>Blue</key>
+                <real>0.60</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.80</real>
+                <key>Green</key>
+                <real>0.80</real>
+                <key>Blue</key>
+                <real>0.80</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+
+        <key>Neon</key>
+        <array>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>1.00</real>
+                <key>Green</key>
+                <real>0.10</real>
+                <key>Blue</key>
+                <real>0.40</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.10</real>
+                <key>Green</key>
+                <real>1.00</real>
+                <key>Blue</key>
+                <real>0.40</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.10</real>
+                <key>Green</key>
+                <real>0.40</real>
+                <key>Blue</key>
+                <real>1.00</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>1.00</real>
+                <key>Green</key>
+                <real>0.90</real>
+                <key>Blue</key>
+                <real>0.10</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+            <dict>
+                <key>Color Space</key>
+                <string>RGB</string>
+                <key>Red</key>
+                <real>0.90</real>
+                <key>Green</key>
+                <real>0.10</real>
+                <key>Blue</key>
+                <real>1.00</real>
+                <key>Alpha</key>
+                <real>1.0</real>
+            </dict>
+        </array>
+    </dict>
+
+</dict>
+</plist>

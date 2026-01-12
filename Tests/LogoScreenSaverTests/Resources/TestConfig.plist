@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Debug Mode</key>
+	<true/>
+	<key>Logo Size</key>
+	<dict>
+		<key>Mode</key>
+		<string>absolute</string>
+		<key>Width</key>
+		<integer>200</integer>
+		<key>Height</key>
+		<integer>150</integer>
+	</dict>
+	<key>Color Palette</key>
+	<string>TestPalette</string>
+	<key>Logo Selection</key>
+	<string>sequential</string>
+	<key>Color Palettes</key>
+	<dict>
+		<key>TestPalette</key>
+		<array>
+			<dict>
+				<key>Red</key>
+				<real>0.5</real>
+				<key>Green</key>
+				<real>0.5</real>
+				<key>Blue</key>
+				<real>0.5</real>
+				<key>Alpha</key>
+				<real>1.0</real>
+			</dict>
+			<dict>
+				<key>Red</key>
+				<real>1.0</real>
+				<key>Green</key>
+				<real>0.0</real>
+				<key>Blue</key>
+				<real>0.0</real>
+				<key>Alpha</key>
+				<real>1.0</real>
+			</dict>
+		</array>
+	</dict>
+	<key>Logos</key>
+	<dict>
+		<key>test-logo</key>
+		<dict>
+			<key>Type</key>
+			<string>svg</string>
+			<key>Source</key>
+			<string>builtin</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2BLD0022EE3000100000BD2 /* Generated/BuildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BLD0012EE3000000000BD1 /* Generated/BuildInfo.swift */; };
+		F2BLD0032EE3000100000BD3 /* Generated/BuildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BLD0012EE3000000000BD1 /* Generated/BuildInfo.swift */; };
 		F2C001032EE3000100000002 /* Logging/DebugOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001022EE3000000000002 /* Logging/DebugOverlay.swift */; };
 		F2C001052EE3000100000003 /* Animation/Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001042EE3000000000003 /* Animation/Logo.swift */; };
 		F2C001072EE3000100000004 /* Animation/Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C001062EE3000000000004 /* Animation/Animator.swift */; };
@@ -68,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		F22C56F02B258E2F00B5A43A /* LogoScreenSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogoScreenSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BLD0012EE3000000000BD1 /* Generated/BuildInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generated/BuildInfo.swift; sourceTree = "<group>"; };
 		F2C001022EE3000000000002 /* Logging/DebugOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging/DebugOverlay.swift; sourceTree = "<group>"; };
 		F2C001042EE3000000000003 /* Animation/Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation/Logo.swift; sourceTree = "<group>"; };
 		F2C001062EE3000000000004 /* Animation/Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation/Animator.swift; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 		F2C0012C2EE3000000000027 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F2BLD0012EE3000000000BD1 /* Generated/BuildInfo.swift */,
 				F2C001022EE3000000000002 /* Logging/DebugOverlay.swift */,
 				F2C001042EE3000000000003 /* Animation/Logo.swift */,
 				F2C001062EE3000000000004 /* Animation/Animator.swift */,
@@ -334,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BLD0022EE3000100000BD2 /* Generated/BuildInfo.swift in Sources */,
 				F2C001032EE3000100000002 /* Logging/DebugOverlay.swift in Sources */,
 				F2CFG0152EE3000100000C15 /* Configuration.swift in Sources */,
 				F2CFG0C12EE3000100000CC1 /* Loaders/ColorsPlist.swift in Sources */,
@@ -360,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BLD0032EE3000100000BD3 /* Generated/BuildInfo.swift in Sources */,
 				F2C00C242EE3000100000C24 /* ControlsKeyRenderer.swift in Sources */,
 				F2C001132EE3000100000011 /* Logging/DebugOverlay.swift in Sources */,
 				F2CFG0252EE3000100000C25 /* Configuration.swift in Sources */,

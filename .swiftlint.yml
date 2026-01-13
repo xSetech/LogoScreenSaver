@@ -18,6 +18,7 @@ excluded:
   - .build
   - .swiftpm
   - Packages
+  - Core/Generated
 
 # Rule configurations
 cyclomatic_complexity:

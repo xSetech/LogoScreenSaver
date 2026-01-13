@@ -3,3 +3,6 @@ build/
 logos/
 .swiftpm/
 
+# Generated build info
+Core/Generated/
+

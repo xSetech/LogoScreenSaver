@@ -25,13 +25,28 @@ public struct VersionInfo {
     public var sdkName: String
     public var xcodeVer: String
     public var hostVer: String
+    public var commitHash: String
+    public var isDirty: Bool
+    public var buildTimestamp: String
 
-    public init(appName: String, version: String, sdkName: String, xcodeVer: String, hostVer: String) {
+    public init(
+        appName: String,
+        version: String,
+        sdkName: String,
+        xcodeVer: String,
+        hostVer: String,
+        commitHash: String = "unknown",
+        isDirty: Bool = false,
+        buildTimestamp: String = ""
+    ) {
         self.appName = appName
         self.version = version
         self.sdkName = sdkName
         self.xcodeVer = xcodeVer
         self.hostVer = hostVer
+        self.commitHash = commitHash
+        self.isDirty = isDirty
+        self.buildTimestamp = buildTimestamp
     }
 
     public static func fromBundle(_ bundle: Bundle, appNameFallback: String = "App") -> VersionInfo {
@@ -42,7 +57,10 @@ public struct VersionInfo {
             version: dict["CFBundleShortVersionString"] as? String ?? "Unknown",
             sdkName: dict["DTSDKName"] as? String ?? "Unknown",
             xcodeVer: dict["DTXcodeBuild"] as? String ?? "Unknown",
-            hostVer: dict["BuildMachineOSBuild"] as? String ?? "Unknown"
+            hostVer: dict["BuildMachineOSBuild"] as? String ?? "Unknown",
+            commitHash: BuildInfo.commitHash,
+            isDirty: BuildInfo.isDirty,
+            buildTimestamp: BuildInfo.buildTimestamp
         )
     }
 }
@@ -162,7 +180,15 @@ public final class DebugOverlayRenderer {
         state: DebugOverlayState,
         frame: NSRect
     ) -> ContentInfo {
-        let versionLine = "\(state.version.appName) - Version \(state.version.version), SDK \(state.version.sdkName), XCode \(state.version.xcodeVer), OS \(state.version.hostVer)"
+        var versionLine = "\(state.version.appName) - Version \(state.version.version)"
+        if state.version.commitHash != "unknown" && !state.version.commitHash.isEmpty {
+            let shortHash = String(state.version.commitHash.prefix(7))
+            versionLine += " (\(shortHash))"
+            if state.version.isDirty {
+                versionLine += " [dirty]"
+            }
+        }
+        versionLine += ", SDK \(state.version.sdkName), XCode \(state.version.xcodeVer), OS \(state.version.hostVer)"
         let versionAttr = NSAttributedString(string: versionLine, attributes: textAttrs)
 
         let copyrightText = """

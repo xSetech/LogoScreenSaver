@@ -39,7 +39,12 @@ let package = Package(
             name: "LogoScreenSaver",
             dependencies: ["LogoScreenSaverCore"],
             path: "ScreenSaver",
-            exclude: ["Info.plist"]
+            exclude: [
+                "Info.plist",
+                "thumbnail.png",
+                "thumbnail@2x.png",
+                "AppIcon.icns"
+            ]
         ),
 
         // App executable target (depends on Core and ScreenSaver for ConfigureSheetController)
@@ -52,7 +57,8 @@ let package = Package(
             path: "App",
             exclude: [
                 "Info.plist",
-                "LogoScreenSaverApp.entitlements"
+                "LogoScreenSaverApp.entitlements",
+                "AppIcon.icns"
             ]
         ),
 

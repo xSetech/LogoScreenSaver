@@ -1,0 +1,133 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    name: Build Release Artifacts
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Extract Version from Tag
+        id: version
+        run: |
+          VERSION=${GITHUB_REF_NAME#v}
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Building version: $VERSION"
+
+      - name: Generate BuildInfo.swift
+        run: |
+          mkdir -p Core/Generated
+          COMMIT_HASH=$(git rev-parse HEAD)
+          DIRTY_STATE=$(git diff --quiet && echo "false" || echo "true")
+          BUILD_TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+          cat > Core/Generated/BuildInfo.swift << EOF
+          // SPDX-License-Identifier: Apache-2.0
+          // Auto-generated - DO NOT EDIT
+
+          import Foundation
+
+          public enum BuildInfo {
+              public static let commitHash = "$COMMIT_HASH"
+              public static let isDirty = $DIRTY_STATE
+              public static let buildTimestamp = "$BUILD_TIMESTAMP"
+          }
+          EOF
+
+          echo "Generated BuildInfo.swift:"
+          cat Core/Generated/BuildInfo.swift
+
+      - name: Build LogoScreenSaver.saver (Release)
+        run: |
+          xcodebuild build \
+            -project LogoScreenSaver.xcodeproj \
+            -scheme LogoScreenSaver \
+            -configuration Release \
+            -destination 'platform=macOS' \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=YES \
+            MARKETING_VERSION=${{ steps.version.outputs.version }} \
+            CURRENT_PROJECT_VERSION=${{ steps.version.outputs.version }}
+
+      - name: Build LogoScreenSaverApp.app (Release)
+        run: |
+          xcodebuild build \
+            -project LogoScreenSaver.xcodeproj \
+            -scheme LogoScreenSaverApp \
+            -configuration Release \
+            -destination 'platform=macOS' \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=YES \
+            MARKETING_VERSION=${{ steps.version.outputs.version }} \
+            CURRENT_PROJECT_VERSION=${{ steps.version.outputs.version }}
+
+      - name: Package Artifacts
+        run: |
+          mkdir -p artifacts
+
+          # Find and package the .saver bundle
+          SAVER_PATH=$(find build/DerivedData -name "LogoScreenSaver.saver" -type d | head -1)
+          if [ -n "$SAVER_PATH" ]; then
+            ditto -c -k --keepParent "$SAVER_PATH" "artifacts/LogoScreenSaver-${{ steps.version.outputs.version }}.saver.zip"
+            echo "Packaged: LogoScreenSaver-${{ steps.version.outputs.version }}.saver.zip"
+          else
+            echo "Error: LogoScreenSaver.saver not found"
+            exit 1
+          fi
+
+          # Find and package the .app bundle
+          APP_PATH=$(find build/DerivedData -name "LogoScreenSaverApp.app" -type d | head -1)
+          if [ -n "$APP_PATH" ]; then
+            ditto -c -k --keepParent "$APP_PATH" "artifacts/LogoScreenSaverApp-${{ steps.version.outputs.version }}.app.zip"
+            echo "Packaged: LogoScreenSaverApp-${{ steps.version.outputs.version }}.app.zip"
+          else
+            echo "Error: LogoScreenSaverApp.app not found"
+            exit 1
+          fi
+
+          ls -la artifacts/
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "LogoScreenSaver ${{ steps.version.outputs.version }}"
+          body: |
+            ## LogoScreenSaver ${{ steps.version.outputs.version }}
+
+            ### Installation
+
+            **Screen Saver (.saver)**
+            1. Download `LogoScreenSaver-${{ steps.version.outputs.version }}.saver.zip`
+            2. Unzip and double-click `LogoScreenSaver.saver`
+            3. Choose "Install for current user" or "Install for all users"
+            4. Open System Settings > Screen Saver to configure
+
+            **Test App (.app)**
+            1. Download `LogoScreenSaverApp-${{ steps.version.outputs.version }}.app.zip`
+            2. Unzip and move to Applications
+            3. Right-click and select "Open" (required for ad-hoc signed apps)
+
+            ---
+
+            **Full Changelog**: https://github.com/${{ github.repository }}/compare/...v${{ steps.version.outputs.version }}
+          files: |
+            artifacts/LogoScreenSaver-${{ steps.version.outputs.version }}.saver.zip
+            artifacts/LogoScreenSaverApp-${{ steps.version.outputs.version }}.app.zip
+          draft: false
+          prerelease: ${{ contains(steps.version.outputs.version, '-') }}

@@ -19,11 +19,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Xcode
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: latest-stable
-
       - name: Extract Version from Tag
         id: version
         run: |
@@ -127,11 +122,6 @@ jobs:
             1. Download `LogoScreenSaverApp-${{ steps.version.outputs.version }}.app.zip`
             2. Unzip and move to Applications
             3. Right-click and select "Open" (required for ad-hoc signed apps)
-
-            ### Notes
-            - Requires macOS 14.0 (Sonoma) or later
-            - Ad-hoc signed (no Apple Developer certificate)
-            - First launch may require security approval in System Settings
 
             ---
 

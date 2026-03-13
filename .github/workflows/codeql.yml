@@ -31,6 +31,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Generate BuildInfo.swift
+      run: bash Scripts/generate-build-info.sh
+
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v4
       with:
